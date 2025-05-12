@@ -3,18 +3,25 @@ const container = document.getElementById("content");
 const time = new Date();
 const month = time.getMonth();
 const date = time.getDate();
-const hours = time.getHours();
-const minutes = time.getMinutes();
-window.onload = function(){
+const hours =time.getHours();
+const minutes =time.getMinutes();
+
   students.forEach(e=>{
     let isChecked = localStorage.getItem(e)==='true'
     console.log(e)
-    container.innerHTML += `<div class="box"><h2>${e}</h2> <input type="checkbox" name="${e}" id="${e.replace(" ","")}" class="names" ${isChecked ? 'checked':''}></div>`
+    
+  //  window.onload = function(){
     if(date === 1 && hours === 0 && minutes === 0){
       localStorage.setItem(e,false)
+      container.innerHTML += `<div class="box"><h2>${e}</h2> <input type="checkbox" name="${e}" id="${e.replace(" ","")}" class="names" ${isChecked ? 'checked':''}></div>`
     }
+    else{
+      container.innerHTML += `<div class="box"><h2>${e}</h2> <input type="checkbox" name="${e}" id="${e.replace(" ","")}" class="names" ${isChecked ? 'checked':''}></div>`
+    }
+  //  }
+    
   })
-}
+
   
   const checkboxes  = document.getElementsByClassName('names');
   Array.from(checkboxes).forEach((checkbox)=>{
