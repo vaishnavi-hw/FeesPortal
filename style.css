@@ -17,6 +17,7 @@ html,body{
     background: rgb(230, 158, 158);
     justify-content: space-around;
     align-items: center;
+    margin-top:50px;
   
 }
 .box{
