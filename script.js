@@ -1,4 +1,4 @@
-const students = ["Ankan Mahato","Bidisha Sarkar","Itu Mondal", "Mayuri Sarkar","Somnath Mondal","Shruti Pandey"];
+const students = ["Ankan Mahato","Bidisha Sarkar","Itu Mondal", "Mayuri Sarkar","Ranadip Mondal","Somnath Mondal","Shruti Pandey"];
 const container = document.getElementById("content");
 const time = new Date();
 const month = time.getMonth();
